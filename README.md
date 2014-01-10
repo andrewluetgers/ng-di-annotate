@@ -1,7 +1,9 @@
-# ng-annotate
-ng-annotate adds and removes AngularJS and [ND-DI](https://github.com/jmendiara/ng-di) dependency injection annotations.
+# ng-di-annotate
+ng-annotate adds and removes AngularJS and [NG-DI](https://github.com/jmendiara/ng-di) dependency injection annotations.
 It is non-intrusive so your source code stays exactly the same otherwise.
 No lost comments or moved lines.
+
+This is a fork of and should be used in place of ng-annotate for support of NG-DI.
 
 Without annotations:
 
@@ -18,7 +20,7 @@ favorite JS minifier.
 
 
 ## Installation and usage
-    npm install -g ng-annotate
+    npm install -g ng-di-annotate
 
 Then run it as `ng-annotate OPTIONS file.js`. The errors (if any) will go to stderr,
 the transpiled source to stdout, so redirect it like `ng-annotate file.js > output.js`.
@@ -95,5 +97,5 @@ decompilation step.
 ng-annotate can be used as a library. See `ng-annotate.js` for further info about
 options and return value.
 
-    var ngAnnotate = require("ng-annotate");
+    var ngAnnotate = require("ng-di-annotate");
     var transformedSource = ngAnnotate(src, {add: true}).src;
