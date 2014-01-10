@@ -36,7 +36,7 @@ function matchRegular(node, re) {
     // Long form: angular.module(*).controller("MyCtrl", function($scope, $timeout) {});
     function isLongDef(node) {
         return node.callee &&
-            node.callee.object && node.callee.object.name === "angular" &&
+            node.callee.object && (node.callee.object.name === "angular" || node.callee.object.name === "di") &&
             node.callee.property && node.callee.property.name === "module";
     }
 
