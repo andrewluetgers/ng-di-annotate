@@ -1,5 +1,5 @@
 # ng-annotate
-ng-annotate adds and removes AngularJS dependency injection annotations.
+ng-annotate adds and removes AngularJS and [ND-DI](https://github.com/jmendiara/ng-di) dependency injection annotations.
 It is non-intrusive so your source code stays exactly the same otherwise.
 No lost comments or moved lines.
 
