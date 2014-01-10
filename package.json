@@ -1,11 +1,11 @@
 {
-  "name": "ng-annotate",
+  "name": "ng-di-annotate",
   "version": "0.4.0",
-  "description": "add, remove and rebuild angularjs dependency injection annotations",
+  "description": "add, remove and rebuild angularjs and ng-di dependency injection annotations",
   "main": "build/es5/ng-annotate-main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olov/ng-annotate.git"
+    "url": "https://github.com/andrewluetgers/ng-di-annotate.git"
   },
   "dependencies": {
     "ast-traverse": "~0.1.0",
